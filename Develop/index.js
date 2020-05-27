@@ -11,11 +11,21 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
+    fs.writeFile(fileName, generateMarkdown(data), function(err){
+        if(err){
+            console.log("ERROR");
+        }else{
+            console.log("SUCCESS");
+        }
+    });
 }
 
 function init() {
-    inquirer.prompt(questions).then((response) => {
+    inquirer
+        .prompt(questions)
+        .then((response) => {
         writeToFile("README.md", response);
+        console.log (generateMarkdown(response));
     });
 }
 
