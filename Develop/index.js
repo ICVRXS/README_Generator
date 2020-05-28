@@ -7,6 +7,11 @@ const questions = [
     type: "input",
     message: "What is the name of your project?",
     name: "projectName"
+    },
+    {
+    type: "input",
+    message: "Write a description for your project",
+    name: "projectDesc"
     }
 ];
 
