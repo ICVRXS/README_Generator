@@ -12,7 +12,37 @@ const questions = [
     type: "input",
     message: "Write a description for your project",
     name: "projectDesc"
-    }
+    },
+    {
+    type: "input",
+    message: "How is your project installed?",
+    name: "projectInstall"
+    },
+    {
+    type: "input",
+    message: "What are the practical uses for this project?",
+    name: "projectUsage"
+    },
+    {
+    type: "input",
+    message: "Are there any licenses associated with this project?",
+    name: "projectLicense"
+    },
+    {
+    type: "input",
+    message: "List all contributors here",
+    name: "projectContribute"
+    },
+    {
+    type: "input",
+    message: "What testing was done on this project?",
+    name: "projectTest"
+    },
+{
+    type: "input",
+    message: "What are some FAQs about your project?",
+    name: "projectFaq"
+    },
 ];
 
 function writeToFile(fileName, data) {
