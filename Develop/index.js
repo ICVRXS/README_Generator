@@ -7,42 +7,42 @@ const questions = [
     type: "input",
     message: "What is the name of your project?",
     name: "projectName"
-    }
-//     {
-//     type: "input",
-//     message: "Write a description for your project",
-//     name: "projectDesc"
-//     },
-//     {
-//     type: "input",
-//     message: "How is your project installed?",
-//     name: "projectInstall"
-//     },
-//     {
-//     type: "input",
-//     message: "What are the practical uses for this project?",
-//     name: "projectUsage"
-//     },
-//     {
-//     type: "input",
-//     message: "Are there any licenses associated with this project?",
-//     name: "projectLicense"
-//     },
-//     {
-//     type: "input",
-//     message: "List all contributors here",
-//     name: "projectContribute"
-//     },
-//     {
-//     type: "input",
-//     message: "What testing was done on this project?",
-//     name: "projectTest"
-//     },
-// {
-//     type: "input",
-//     message: "What are some FAQs about your project?",
-//     name: "projectFaq"
-//     },
+    },
+    {
+    type: "input",
+    message: "Write a description for your project",
+    name: "projectDesc"
+    },
+    {
+    type: "input",
+    message: "How is your project installed?",
+    name: "projectInstall"
+    },
+    {
+    type: "input",
+    message: "What are the practical uses for this project?",
+    name: "projectUsage"
+    },
+    {
+    type: "input",
+    message: "Are there any licenses associated with this project?",
+    name: "projectLicense"
+    },
+    {
+    type: "input",
+    message: "List all contributors here",
+    name: "projectContribute"
+    },
+    {
+    type: "input",
+    message: "What testing was done on this project?",
+    name: "projectTest"
+    },
+    {
+    type: "input",
+    message: "What are some FAQs about your project?",
+    name: "projectFaq"
+    },
 ];
 
 function writeToFile(fileName, data) {
@@ -56,16 +56,13 @@ function writeToFile(fileName, data) {
 }
 
 function init() {
-    let loop = undefined;
-    if (loop === undefined){
-        inquirer
-            .prompt(questions)
-            .then((response) => {
-                loop = projectName;
-                writeToFile("README.md", response);
-                console.log (generateMarkdown(response));
-        });
-    }
+    inquirer
+        .prompt(questions)
+        .then((response) => {
+            writeToFile("README.md", response);
+            console.log (generateMarkdown(response));
+    });
 }
+
 
 init();
