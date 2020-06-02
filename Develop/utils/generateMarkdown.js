@@ -1,8 +1,6 @@
 function generateMarkdown(data) {
-
-
   return `
-  # ${data.projectName} [![Generic badge](https://img.shields.io/badge/Made_By-${data.githubName}-<COLOR>.svg)](https://github.com/${data.githubName}/)
+  # ${data.projectName} [![GitHub Badge](https://img.shields.io/badge/Made_By-${data.githubName}-<COLOR>.svg)](https://github.com/${data.githubName}/)
 
   ---
   ${data.projectDesc}
