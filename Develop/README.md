@@ -1,20 +1,39 @@
-# ReadMe Generator
-    A simple node app to assist in generating read me markdown files
 
-# Installation
-    CLone from the repo, install dependenceies, and run the index.js file in node
+  # ReadMe Generator [![Generic badge](https://img.shields.io/badge/Made_By-ICVRXS-<COLOR>.svg)](https://github.com/ICVRXS/)
 
-# Usage
-    A quicker way to write verbose ReadMe files with concise questions. It makes it easier to know what content to include and what to leave out.
+  ---
+  A simple app to help you make a concise ReadMe for your projects.
 
-# License
-    No Licenses.
+  # Table of Contents
+  ---
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [Licensing](#Licensing)
+  * [Contributors](#Contributors)
+  * [Testing](#Testing)
+  * [FAQ](#FAQ)
 
-# Contribute
-    Caleb Hay, Anthony Brown, Spencer Hirata
+  # Installation
+  ---
+  Clone from repository and run in node
 
-# Tests
-    Plenty of bug testing and trial and error.
+  # Usage
+  ---
+  Simple prompts provide clear indications of the type of content to include within your readme files. It helps to streamline and simplify the process of writing a detailed ReadMe.
 
-# FAQs
-    No FAQs as of yet. 
+  # Licensing
+  ---
+  Open source
+
+  # Contributors
+  ---
+  Caleb Hay, Anthony Brown, Christopher Marti, Billy Hao, Spencer Hirata
+
+  # Testing
+  ---
+  Practical trial and error, elbow grease.
+
+  # FAQ
+  ---
+  No questions yet.
+  

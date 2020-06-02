@@ -5,6 +5,11 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 const questions = [
     {
     type: "input",
+    message: "What is your Git Hub username?",
+    name: "githubName"
+    },
+    {
+    type: "input",
     message: "What is the name of your project?",
     name: "projectName"
     },

@@ -1,129 +1,46 @@
 function generateMarkdown(data) {
-//Generate Title
-  let fileContent = "";
-  if (!data.projectName){
-    fileContent += "# My Project";
-    return fileContent;
-  }else{
-    fileContent += generateTitle(data.projectName);
-  }
 
-  function generateTitle(data){
-    return `# ${data}`
-  }
 
-//Generate Description
-  if (!data.projectDesc){
-    fileContent += `
-    My Project`;
-    return fileContent;
-  }else{
-    fileContent += generateDesc(data.projectDesc);
-  }
+  return `
+  # ${data.projectName} [![Generic badge](https://img.shields.io/badge/Made_By-${data.githubName}-<COLOR>.svg)](https://github.com/${data.githubName}/)
 
-  function generateDesc(data){
-    return `
-    ${data}`
-  }
+  ---
+  ${data.projectDesc}
 
-//Generate Installation
-  if (!data.projectInstall){
-    fileContent += `
-    `;
-    return fileContent;
-  }else{
-    fileContent += generateInstall(data.projectInstall);
-  }
+  # Table of Contents
+  ---
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [Licensing](#Licensing)
+  * [Contributors](#Contributors)
+  * [Testing](#Testing)
+  * [FAQ](#FAQ)
 
-  function generateInstall(data){
-    return `
+  # Installation
+  ---
+  ${data.projectInstall}
 
-# Installation
-    ${data}`
-  }
+  # Usage
+  ---
+  ${data.projectUsage}
 
-//Generate Usage
-  if (!data.projectUsage){
-    fileContent += `
-    `;
-    return fileContent;
-  }else{
-    fileContent += generateUsage(data.projectUsage);
-  }
+  # Licensing
+  ---
+  ${data.projectLicense}
 
-  function generateUsage(data){
-    return `
+  # Contributors
+  ---
+  ${data.projectContribute}
 
-# Usage
-    ${data}`
-  }
+  # Testing
+  ---
+  ${data.projectTest}
 
-//Generate License
-  if (!data.projectLicense){
-    fileContent += `
-    `;
-    return fileContent;
-  }else{
-    fileContent += generateLicense(data.projectLicense);
-  }
-
-  function generateLicense(data){
-    return `
-
-# License
-    ${data}`
-  }
-
-//Generate Contributors
-  if (!data.projectContribute){
-    fileContent += `
-    `;
-    return fileContent;
-  }else{
-    fileContent += generateContributors(data.projectContribute);
-  }
-
-  function generateContributors(data){
-    return `
-
-# Contribute
-    ${data}`
-  }
-
-//Generate Tests
-  if (!data.projectTest){
-    fileContent += `
-    `;
-    return fileContent;
-  }else{
-    fileContent += generateTest(data.projectTest);
-  }
-
-  function generateTest(data){
-    return `
-
-# Tests
-    ${data}`
-  }
-
-//Generate FAQ
-  if (!data.projectFaq){
-    fileContent += `
-    `;
-    return fileContent;
-  }else{
-    fileContent += generateFaq(data.projectFaq);
-  }
-
-  function generateFaq(data){
-    return `
-
-# FAQs
-    ${data}`
-  }
-
-  return fileContent;
-
+  # FAQ
+  ---
+  ${data.projectFaq}
+  `;
 }
+
 
 module.exports = generateMarkdown;
