@@ -1,8 +1,8 @@
 
-  # ReadMe Generator [![Generic badge](https://img.shields.io/badge/Made_By-ICVRXS-<COLOR>.svg)](https://github.com/ICVRXS/)
+  # ReadMe Generator [![GitHub Badge](https://img.shields.io/badge/Made_By-ICVRXS-<COLOR>.svg)](https://github.com/ICVRXS/)
 
   ---
-  A simple app to help you make a concise ReadMe for your projects.
+  A simple app to assist in writing quick ReadMes
 
   # Table of Contents
   ---
@@ -15,25 +15,25 @@
 
   # Installation
   ---
-  Clone from repository and run in node
+  Clone from repository, run in Node using node index.js
 
   # Usage
   ---
-  Simple prompts provide clear indications of the type of content to include within your readme files. It helps to streamline and simplify the process of writing a detailed ReadMe.
+  To help create concise ReadMe files in a quick way. It helps to cut down on the time spent on figuring out exactly what content to incude by giving prompts of which questions you should answer.
 
   # Licensing
   ---
-  Open source
+  The project is open source 
 
   # Contributors
   ---
-  Caleb Hay, Anthony Brown, Christopher Marti, Billy Hao, Spencer Hirata
+  Caleb Hay, Anthony Brown, Spencer Hirata, Billy Hao, Christopher Marti
 
   # Testing
   ---
-  Practical trial and error, elbow grease.
+  Practical trial and error and some elbow grease
 
   # FAQ
   ---
-  No questions yet.
+  No questions as of yet.
   
